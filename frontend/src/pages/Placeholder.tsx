@@ -1,0 +1,3 @@
+import { ArrowLeft, Construction } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+export default function Placeholder({title}:{title:string}){const nav=useNavigate();return <section className="module-page"><div className="module-card"><div className="module-icon"><Construction size={25}/></div><span className="feature-kicker">MODULE</span><h1>{title}</h1><p>This module is ready for the LOGIFORGE backend data layer. We will connect real APIs here next.</p><button className="primary-btn" onClick={()=>nav("/dashboard")}><ArrowLeft size={16}/> Back to overview</button></div></section>}
